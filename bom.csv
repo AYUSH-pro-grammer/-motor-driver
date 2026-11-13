@@ -1,0 +1,28 @@
+Name,References,Quantity,Order quantity,Unit price (USD),Total price (USD),Purchase link,Reference BOM link,Notes
+"100 nF 50 V X7R capacitor, 0805","C1,C4,C6,C8,C9,C10,C11,C12,C13,C16,C19",11,50,0.0060,0.30,https://www.lcsc.com/product-detail/C1711.html,,
+"1000 µF 25 V aluminum capacitor, SMD 10 × 10.5 mm","C2,C3,C5,C7",4,4,0.4038,1.62,https://www.lcsc.com/product-detail/C51018391.html,,Budget candidate. Verify VBAT transients and ripple rating before ordering. The SMBJ18A can clamp above 25 V.
+"10 nF 50 V X7R capacitor, 0805",C14,1,50,0.0116,0.58,https://www.lcsc.com/product-detail/C1710.html,,
+"1 µF 50 V X7R capacitor, 0805","C15,C17",2,10,0.0403,0.40,https://www.lcsc.com/product-detail/C28323.html,,
+"4.7 µF 25 V X5R capacitor, 0805",C18,1,1,0.1300,0.13,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3889330,,
+"22 µF output capacitor, 0805",C20,1,,,,https://www.lcsc.com/product-detail/C602037.html,https://www.lcsc.com/product-detail/C602037.html,"Candidate only. Verify effective capacitance and ESR requirements for the selected AMS1117-3.3. If compatible, use one from the C21 order."
+"22 µF 25 V X5R input capacitor, 0805",C21,1,10,0.1576,1.58,https://www.lcsc.com/product-detail/C602037.html,https://www.lcsc.com/product-detail/C602037.html,
+"Red LED, 0805","D1,D4,D6,D7,D13,D15",6,6,0.2900,1.74,https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/QTLP630C7TR/2675903,https://www.lcsc.com/product-detail/C2986044.html,Color assignment follows the reference schematic. KiCad uses generic LED values.
+"Blue LED, 0805","D2,D3,D5,D8,D9",5,5,0.3100,1.55,https://www.digikey.com/en/products/detail/liteon/LTST-C170TBKT/388527,,Check D9 brightness at the 3.3 V GPIO and selected resistor.
+"Yellow LED, 0805",D10,1,1,0.1800,0.18,https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170KSKT/386781,,
+"Green LED, 0805",D11,1,1,0.1700,0.17,https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C170GKT/269251,,
+"SMBJ18A unidirectional TVS diode, SMB",D12,1,5,0.1511,0.76,https://www.lcsc.com/product-detail/C151256.html,https://www.lcsc.com/product-detail/C127556.html,VBAT protection per reference schematic. Check against the maximum supply voltage.
+"SS54B Schottky diode, SMB",D14,1,10,0.0486,0.49,https://www.lcsc.com/product-detail/C2988643.html,,Series diode for the 5 V input. The reference SKU uses SMA. Verify logic rail headroom after the diode drop.
+Phoenix Contact MKDS 3/2-5.08 motor terminal block,"J1,J2,J3,J4",4,4,1.9100,7.64,https://us.rs-online.com/product/phoenix-contact/1711725/70054425/,,Verify terminal and PCB current ratings for the motors.
+AMASS XT60PW-M right-angle PCB connector,J5,1,1,0.6054,0.61,https://www.lcsc.com/product-detail/C98732.html,https://www.lcsc.com/product-detail/C7204007.html,
+"2.54 mm vertical pin headers, cut from one 40-pin strip","J6,J7,J8,J9,J10,J11,J12,J13",8,1,0.4900,0.49,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PREC040SAAN-RC/2774814,https://www.lcsc.com/product-detail/C37208.html,"Cut six 4-pin, one 3-pin and one 6-pin section. Reference link is the individual 6-pin option for J13."
+"Phoenix Contact MKDS 1,5/2-5.08 5 V terminal block",J14,1,1,1.2800,1.28,https://us.rs-online.com/product/phoenix-contact/1715721/70054416/,,
+"1 kΩ ±1% resistor, 0805","R1,R3,R5,R7,R9,R10,R13,R15,R16,R19,R21,R22,R24,R26,R27,R30,R32,R33,R35,R37,R38,R41,R43,R44,R51",25,25,0.0256,0.64,https://www.digikey.com/en/products/detail/yageo/RC0805FR-071KL/730391,,
+"10 kΩ ±1% resistor, 0805","R2,R4,R6,R8,R11,R12,R14,R17,R18,R20,R23,R25,R28,R29,R31,R34,R36,R39,R40,R42,R48,R49",22,100,0.0039,0.39,https://www.lcsc.com/product-detail/C17414.html,,
+"220 Ω ±1% resistor, 0805","R45,R46,R47",3,100,0.0055,0.55,https://www.lcsc.com/product-detail/C17557.html,,
+"39 kΩ ±1% resistor, 0805",R50,1,1,0.1000,0.10,https://www.digikey.com/en/products/detail/yageo/RC0805FR-0739KL/727899,,
+"BTS7960B half-bridge motor driver, TO-263-7","U1,U2,U3,U4,U5,U6,U7,U8",8,8,3.5866,28.69,https://www.dnatechindia.com/bts7960-high-current-pn-half-bridge-ic-to263-buy-in-india.html,https://jlcpcb.com/partdetail/InfineonTechnologies-BTS7960B/C5122776,"Budget quote: ₹336.30 each including GST, converted at ₹93.765/USD. Confirm BTS7960B suffix with vendor."
+"TI SN74ACT08 quad AND gate, SOIC-14","U9,U10",2,2,0.5100,1.02,https://www.digikey.com/en/products/detail/texas-instruments/SN74ACT08DR/404868,https://www.lcsc.com/product-detail/C2878686.html,SN74ACT08DR is the cut-tape option for the D package.
+"STM32G431CBU6 microcontroller, UFQFPN-48",U11,1,1,6.0800,6.08,https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G431CBU6/10231569,,Bare MCU for the KiCad footprint.
+"UMW AMS1117-3.3 regulator, SOT-223",U12,1,10,0.0486,0.49,https://www.lcsc.com/product-detail/C347222.html,https://www.lcsc.com/product-detail/C347222.html,
+JLCPCB PCB fabrication,,,1,30.8000,30.80,https://jlcpcb.com/,,Price for one fabrication order
+"TOTAL PRICE (USD, priced lines)",,113,,,88.28,,,"Includes PCB fabrication and listed order minimums."
